@@ -17,6 +17,8 @@
 //LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //THE SOFTWARE.
+#ifndef _NEWOBSERVER_H
+#define _NEWOBSERVER_H
 
 #include "stdafx.h"
 #include <iostream>
@@ -97,3 +99,5 @@ inline void invoke(wstring event_name)
     auto pos = event_mapping.equal_range(event_name);
     for_each(pos.first, pos.second, [](decltype(*pos.first) func) {(*(func).second)();});
 }
+
+#endif //_NEWOBSERVER_H

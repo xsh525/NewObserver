@@ -1,4 +1,4 @@
-This is a C++ implementaion of oberver-like pattern. But with several significant differencts:
+This is a C++ implementaion of oberver-like pattern. But with several significant differences:
 1. Register at single point.
 2. Clients do not have to be derived from same base class.
 3. Use string to stand for events, so it easy to read events from outside.
