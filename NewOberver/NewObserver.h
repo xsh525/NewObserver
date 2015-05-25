@@ -60,7 +60,7 @@ public:
     {
         m_id = action_id;
         //Construct the event mapping
-        event_mapping.insert(pair<wstring, FunctorBase*>(event_name, this));
+        event_mapping.emplace(pair<const wstring, FunctorBase*>(event_name, this));
     }
 
     virtual void operator()()
