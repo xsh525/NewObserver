@@ -21,7 +21,6 @@
 #define _NEWOBSERVER_H
 
 #include "stdafx.h"
-#include <iostream>
 #include <map>
 #include <string>
 #include <algorithm>

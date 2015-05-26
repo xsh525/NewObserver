@@ -20,6 +20,7 @@
 
 #include "stdafx.h"
 #include "NewObserver.h"
+#include <iostream>
 
 class Cat
 {
